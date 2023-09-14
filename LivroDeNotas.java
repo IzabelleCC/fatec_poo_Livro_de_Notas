@@ -1,7 +1,15 @@
 
 public class LivroDeNotas{
     // variavel de instancia
-    String nomeDisciplina;
+    //encapsulamento (oculta detalhes)
+    private String nomeDisciplina;
+    
+    public String getNomeDisciplina(){
+        return nomeDisciplina;
+    }
+    public void setNomeDisciplina(Strinq nomeDisciplina){
+        this.nomeDisciplina = nomeDisciplina;
+    }
 
     public void exibirMensagem(){
         System.out.printf("Bem vindo ao livro de notas de %s \n", nomeDisciplina);
@@ -11,4 +19,5 @@ public class LivroDeNotas{
     LivroDeNotas(String nomeDisciplina){
         this.nomeDisciplina = nomeDisciplina;
     }
+
 }
